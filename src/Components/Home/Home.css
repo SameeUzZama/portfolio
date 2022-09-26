@@ -1,0 +1,60 @@
+.home {
+  display: flex;
+  height: 77vh;
+  margin-top: 2rem;
+}
+.h_left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.h_name {
+  display: flex;
+  flex-direction: column;
+}
+.h_name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.h_name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.h_name > :nth-child(3) {
+  color: var(--gray);
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.h_button {
+  width: 6rem;
+  height: 2rem;
+}
+.h_icons {
+  display: flex;
+  gap: 0rem;
+}
+.h_icons > * {
+  transform: scale(0.5);
+}
+.h_icons > * :hover {
+  cursor: pointer;
+}
+.h_right {
+  flex: 1;
+  position: relative;
+}
+.h_right > * {
+  position: absolute;
+  z-index: 1;
+}
+.h_right > :nth-child(1) {
+  position: absolute;
+  width: 45vw;
+  left: 5%;
+  top: 10%;
+}
