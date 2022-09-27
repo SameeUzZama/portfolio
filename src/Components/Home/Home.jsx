@@ -3,8 +3,8 @@ import "./Home.css";
 import Github from "../../Asset/github.png";
 import Linkedin from "../../Asset/linkedin.png";
 import Code from "../../Asset/code.png";
-import ThumbUp from "../../Asset/thumbup.png";
 import Glasses1 from "../../Asset/glassesimoji.png";
+import Crown from "../../Asset/crown.png";
 
 export default function Home() {
   return (
@@ -41,6 +41,13 @@ export default function Home() {
       </div>
       <div className="h_right">
         <img src={Code} alt="" />
+        <div className="h_icon">
+          <img src={Glasses1} alt="" />
+        </div>
+        <div className="h_fDiv">
+          <img src={Crown} alt="" />
+          <span>Web Developer</span>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,12 @@
+/* @media (min-width: 2560px) { */
 .home {
   display: flex;
-  height: 77vh;
+  height: 80vh;
   margin-top: 2rem;
+  background-image: url(../../Asset/purpleblur.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 .h_left {
   display: flex;
@@ -58,3 +63,189 @@
   left: 5%;
   top: 10%;
 }
+.h_icon {
+  position: absolute;
+  height: 100%;
+  animation-name: img1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.h_icon > :nth-child(1) {
+  height: 20%;
+}
+@keyframes img1 {
+  0% {
+    top: 0px;
+    bottom: 0px;
+  }
+  50% {
+    top: 30px;
+    bottom: 0px;
+  }
+  100% {
+    top: 0px;
+    bottom: 0px;
+  }
+}
+.h_fDiv {
+  position: relative;
+  background-color: rgb(145, 142, 142);
+  height: 10vh;
+  width: 15vw;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  padding: 0 20px;
+  top: 70%;
+  left: 40%;
+  animation-name: img2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes img2 {
+  0% {
+    left: 300px;
+    right: 300px;
+  }
+  50% {
+    left: 200px;
+    right: 0px;
+  }
+  100% {
+    left: 300px;
+    right: 300px;
+  }
+}
+.h_fDiv > :nth-child(1) {
+  height: 80%;
+}
+/* } */
+
+/* .home {
+  display: flex;
+  height: 80vh;
+  margin-top: 2rem;
+  background-image: url(../../Asset/purpleblur.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.h_left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.h_name {
+  display: flex;
+  flex-direction: column;
+}
+.h_name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.h_name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.h_name > :nth-child(3) {
+  color: var(--gray);
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.h_button {
+  width: 6rem;
+  height: 2rem;
+}
+.h_icons {
+  display: flex;
+  gap: 0rem;
+}
+.h_icons > * {
+  transform: scale(0.5);
+}
+.h_icons > * :hover {
+  cursor: pointer;
+}
+.h_right {
+  flex: 1;
+  position: relative;
+}
+.h_right > * {
+  position: absolute;
+  z-index: 1;
+}
+.h_right > :nth-child(1) {
+  position: absolute;
+  width: 45vw;
+  left: 5%;
+  top: 10%;
+}
+.h_icon {
+  position: absolute;
+  height: 100%;
+  animation-name: img1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.h_icon > :nth-child(1) {
+  height: 20%;
+}
+@keyframes img1 {
+  0% {
+    top: 0px;
+    bottom: 0px;
+  }
+  50% {
+    top: 30px;
+    bottom: 0px;
+  }
+  100% {
+    top: 0px;
+    bottom: 0px;
+  }
+}
+.h_fDiv {
+  position: relative;
+  background-color: rgb(145, 142, 142);
+  height: 10vh;
+  width: 15vw;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  padding: 0 20px;
+  top: 70%;
+  left: 40%;
+  animation-name: img2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes img2 {
+  0% {
+    left: 300px;
+    right: 300px;
+  }
+  50% {
+    left: 200px;
+    right: 0px;
+  }
+  100% {
+    left: 300px;
+    right: 300px;
+  }
+}
+.h_fDiv > :nth-child(1) {
+  height: 80%;
+} */

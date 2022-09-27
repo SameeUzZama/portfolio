@@ -6,7 +6,7 @@ export default function Navbar() {
     <div className="n_wrapper">
       <div className="n_left">
         <div className="n_name">Samee Uz Zama</div>
-        <span>toggle</span>
+        <span className="n_toggle">toggle</span>
       </div>
       <div className="n_right">
         <div className="n_list">
