@@ -5,15 +5,19 @@ import Linkedin from "../../Asset/linkedin.png";
 import Code from "../../Asset/code.png";
 import Glasses1 from "../../Asset/glassesimoji.png";
 import Crown from "../../Asset/crown.png";
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 
 export default function Home() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="home">
       <div className="h_left">
         <div className="h_name">
-          <span>Hey! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
           <span>Samee Uz Zama</span>
-          <span>
+          <span style={{ color: darkMode ? "white" : "" }}>
             React JS developer who is for designing and implementing UI
             components for JavaScript-based web applications with the use of
             open- source library infrastructure. My passion became my
@@ -49,17 +53,16 @@ export default function Home() {
           <span>Web Developer</span>
         </div>
       </div>
-      {/* <span className="blur" style={{ background: "rgb(238 210 255)" }}></span> */}
-      {/* <div
-        className="blur"
+      <div
+        className={darkMode ? "blur1" : "blur"}
         style={{
-          background: "rgb(20,255,255)",
+          background: "rgb(10,255,255)",
           top: "25rem",
           width: "35rem",
           height: "31rem",
           left: "14rem",
         }}
-      ></div> */}
+      ></div>
     </div>
   );
 }

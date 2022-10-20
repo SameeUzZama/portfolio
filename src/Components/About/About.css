@@ -1,9 +1,8 @@
 .About {
-  padding: 0 3rem 03rem;
   display: flex;
-  height: 90vh;
-  margin-bottom: 8rem;
-  margin-top: 9rem;
+  height: 80vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .a_left {
   display: flex;
@@ -22,7 +21,8 @@
   font-weight: bold;
 }
 .a_left > :nth-child(3) {
-  color: var(--gray);
+  color: black;
+  z-index: 2;
   font-size: 1rem;
   margin-top: 2rem;
   font-weight: 650;
@@ -35,81 +35,36 @@
   height: 2rem;
   margin-top: 1rem;
 }
+.a_right {
+  position: relative;
+}
 .a_right_card {
   position: absolute;
   display: flex;
-  margin-top: 5.25rem;
-  justify-content: center;
+  justify-content: space-between;
+  width: 45vw;
+  height: 100%;
+  flex-wrap: wrap;
 }
 .card {
   position: relative;
-  width: 21.875rem;
-  height: 11.875rem;
-  background: #fff;
-  border-radius: 1.25rem;
-  box-shadow: 0 2.1875rem 5rem rgba(0, 0, 0, 0.15);
-  margin: 1.25rem;
-  transition: 0.5s;
-}
-.card:hover {
-  height: 28.125rem;
-}
-.imgBx {
-  position: absolute !important;
-  left: 50%;
-  top: -20%;
-  transform: translateX(-50%);
-  width: 9.375rem;
-  height: 9.375rem;
-  background: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0.9375rem 3.125rem rgb(252, 166, 31);
-  overflow: hidden;
-  transition: 0.5s;
-}
-.card:hover .imgBx {
-  width: 12rem;
-  height: 12rem;
-}
-.imgBx img {
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.card .content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 20vh;
+  height: 20vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  overflow: hidden;
-}
-.card .content .details {
-  padding: 0.5rem;
+  align-items: center;
   text-align: center;
-  width: 100%;
-  transition: 0.5s;
-  transform: translateY(9.375rem);
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--orangeCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  padding: 0rem 0.625rem 0rem 0.625rem;
+  margin: 0rem 1rem 0rem 0rem;
 }
-.card:hover .content .details {
-  transform: translateY(0rem);
+.card img {
+  transform: scale(0.6);
+  margin-bottom: -2rem;
+  height: 5rem;
+  width: 6rem;
 }
-.card .content .details h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #555;
-  line-height: 1.2rem;
-}
-.card .content .details .data {
-  display: contents;
-  justify-content: space-between;
-  display: none;
-  background-color: red;
-}
-/* .card .content .details .data:hover { */
-/* display: hidden; */
-/* /* } */

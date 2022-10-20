@@ -13,6 +13,26 @@
   font-size: 1.3rem;
   font-weight: bold;
 }
+.n_toggle {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid var(--orange);
+  border-radius: 1rem;
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
+}
+.n_toggle > * {
+  width: 1rem;
+  height: 1rem;
+  color: var(--orange);
+}
+.n-toggle-button {
+  border-radius: 100%;
+  background: var(--orange);
+  position: absolute;
+}
+
 .n_right {
   display: flex;
   flex: 1;

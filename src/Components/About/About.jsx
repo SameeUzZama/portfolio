@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./About.css";
-import Carousel from "react-bootstrap/Carousel";
-// import Heart from "../../Asset/heartemoji.png";
-// import Glasses2 from "../../Asset/glasses.png";
-// import Humble from "../../Asset/humble.png";
+import { themeContext } from "../../Context";
+import { useContext } from "react";
 
 export default function About() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   const [skills, setSkills] = useState([]);
 
   const getApi = async () => {
@@ -19,9 +20,9 @@ export default function About() {
   return (
     <div className="About">
       <div className="a_left">
-        <span>My Awesome</span>
+        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>Skills</span>
-        <span>
+        <span style={{ color: darkMode ? "white" : "" }}>
           I have a hands-on efficient coding website and use modern HTML5, CSS3,
           Bootstrap, JavaScript, ECMAScript, React JS, React Hooks, React
           Bootstrap and React Redux Building state-of-the-art, easy to use,
@@ -30,31 +31,19 @@ export default function About() {
           my knowledge base, I actively seek out new technologies and stay up-to
           date on industry trends and advancements.
         </span>
-        <button className="button a_button">Download CV</button>
+        <a href="../../Asset/SAMEE+UZ+ZAMA.pdf" download>
+          <button className="button a_button">Download CV</button>
+        </a>
         <div className="blur a_blu r" style={{ background: "ABF1FF94" }}></div>
       </div>
       <div className="a_right">
         <div className="a_right_card">
-          {/* <Carousel> */}
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <div className="card">
-              <div className="imgBx">
-                <img src={skill.img} alt="#" />
-              </div>
-              <div className="content">
-                <div className="details">
-                  <h2>{skill.skill}</h2>
-                  <div className="data">
-                    <h3>Last Used : {skill.used}</h3>
-                    <h3>Version : {skill.version}</h3>
-                    <h3>Proficency : {skill.proficency}%</h3>
-                    <h3>Experience : {skill.experience} : in Months</h3>
-                  </div>
-                </div>
-              </div>
+              <img src={skill.img} alt="#" />
+              <span>{skill.skill}</span>
             </div>
           ))}
-          {/* </Carousel> */}
         </div>
       </div>
     </div>

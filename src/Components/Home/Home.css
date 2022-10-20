@@ -35,11 +35,12 @@
 .h_button {
   width: 6rem;
   height: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .h_icons {
   display: flex;
   gap: 1rem;
+  margin-left: -3.5%;
 }
 .h_icons > * {
   transform: scale(0.5);
@@ -52,10 +53,6 @@
   flex-direction: column;
   position: relative;
 }
-/* .h_right > * {
-  position: absolute;
-  z-index: 1;
-} */
 .h_right > :nth-child(1) {
   position: absolute;
   width: 40vw;
@@ -88,6 +85,7 @@
 }
 .h_fDiv {
   position: relative;
+  z-index: 2;
   background-color: rgb(145, 142, 142);
   height: 10vh;
   width: 15vw;
@@ -121,14 +119,23 @@
 .h_fDiv > :nth-child(1) {
   height: 80%;
 }
-/* .blur {
+.blur {
   position: absolute;
   width: 22rem;
   height: 14rem;
   border-radius: 50%;
-  background: #edd0ff;
-  filter: blur(5rem);
-  z-index: -0.5625rem;
-  top: 32%;
+  filter: blur(8rem);
+  z-index: -5rem;
+  top: 12%;
   left: 56%;
-} */
+}
+.blur1 {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  filter: blur(15rem);
+  z-index: -5rem;
+  top: 12%;
+  left: 56%;
+}
