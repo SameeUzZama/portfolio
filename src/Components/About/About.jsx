@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import "./About.css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import dbjson from "../../db.json";
 
 export default function About() {
   const theme = useContext(themeContext);
@@ -10,13 +10,10 @@ export default function About() {
 
   const [skills, setSkills] = useState([]);
 
-  const getApi = async () => {
-    const result = await axios.get("http://localhost:3003/cards");
-    setSkills(result.data);
-  };
   useEffect(() => {
-    getApi();
+    setSkills(dbjson.cards);
   }, []);
+
   return (
     <div className="About">
       <div className="a_left">
