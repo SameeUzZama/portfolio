@@ -11,7 +11,7 @@ export default function Projects() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="projects">
+    <div className="projects" id="Projects">
       <span style={{ color: darkMode ? "white" : "" }}>Projects</span>
       <Swiper
         spaceBetween={30}

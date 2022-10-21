@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const theme = useContext(themeContext);
@@ -10,13 +11,27 @@ const Contact = () => {
 
   const form = useRef();
   const [done, setDone] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleMsg = (e) => {
+    setMsg(e.target.value);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
         "service_igtgw45",
-        "template_lu82h47",
+        "template_6iys63g",
         form.current,
         "woZk5-rYqN-ZZVWON"
       )
@@ -24,16 +39,23 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
         },
         (error) => {
           console.log(error.text);
         }
       );
+    setName("");
+    setEmail("");
+    setMsg("");
+  };
+
+  const transition = {
+    duration: 2,
+    type: "spring",
   };
 
   return (
-    <div className="contact-form" id="contact">
+    <div className="contact-form" id="Contact">
       <div className="c-left">
         <div className="awesome">
           <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
@@ -41,25 +63,42 @@ const Contact = () => {
           <div className="blur c-blur1"></div>
         </div>
       </div>
-      <div className="c-right">
+      <motion.div
+        initial={{ left: "25rem" }}
+        whileInView={{ left: "1rem" }}
+        transition={transition}
+        className="c-right"
+      >
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
-            name="user_name"
+            name="from_name"
             className="user"
             placeholder="Name"
+            required
+            value={name}
+            onChange={handleName}
           />
           <input
             type="email"
-            name="user_email"
+            name="from_email"
             className="user"
             placeholder="Email"
+            required
+            value={email}
+            onChange={handleEmail}
           />
-          <textarea name="message" className="user" placeholder="Message" />
+          <textarea
+            name="message"
+            className="user"
+            placeholder="Message"
+            value={msg}
+            onChange={handleMsg}
+          />
           <input type="submit" value="Send" className="button" />
           <span>{done && "Thanks for Contacting me"}</span>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

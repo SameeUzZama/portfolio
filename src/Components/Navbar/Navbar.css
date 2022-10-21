@@ -2,6 +2,29 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  max-width: 100vw;
+  padding-left: 5%;
+  padding-right: 5% !important;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+}
+.n_wrapper_dark {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  max-width: 100vw;
+  padding-left: 5%;
+  padding-right: 5% !important;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
 }
 .n_left {
   flex: 1;
@@ -12,6 +35,7 @@
 .n_name {
   font-size: 1.3rem;
   font-weight: bold;
+  cursor: pointer;
 }
 .n_toggle {
   display: flex;
@@ -47,7 +71,8 @@
   list-style-type: none;
   display: flex;
   gap: 2rem;
-  margin-right: 4rem;
+  margin-right: 2rem;
+  cursor: pointer;
 }
 .n_list > ul > li:hover {
   cursor: pointer;

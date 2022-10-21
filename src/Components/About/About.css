@@ -1,7 +1,7 @@
 .About {
   display: flex;
   height: 80vh;
-  margin-top: 3rem;
+  padding-top: 4rem;
   margin-bottom: 3rem;
 }
 .a_left {

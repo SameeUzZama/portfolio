@@ -3,7 +3,7 @@
   display: flex;
   height: 80vh;
   margin-top: 3rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 .c-left {
   padding: 0 3rem 0 3rem;
@@ -53,9 +53,20 @@ textarea {
   height: 4rem !important;
 }
 
+.button:disabled {
+  border-radius: 34px;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 11px 26px;
+  background: linear-gradient(180deg, #ffffff 26.71%, #ba9309 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+}
+
 .c-blur1 {
   background-color: rgb(20, 255, 255);
 }
+
 /* 
 @media screen and (max-width: 480px) {
   .contact-form {

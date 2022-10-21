@@ -4,7 +4,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="Footer">
       <img src={wave} alt="" style={{ width: "100%", height: "100%" }} />
       <div className="f-content">
         <span>Email : samiuzzama619@gmail.com</span>

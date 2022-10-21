@@ -4,6 +4,7 @@ import Sun from "@iconscout/react-unicons/icons/uil-sun";
 import Moon from "@iconscout/react-unicons/icons/uil-moon";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const theme = useContext(themeContext);
@@ -14,9 +15,11 @@ export default function Navbar() {
   };
 
   return (
-    <div className="n_wrapper">
+    <div className={darkMode ? "n_wrapper_dark" : "n_wrapper"}>
       <div className="n_left">
-        <div className="n_name">Samee Uz Zama</div>
+        <Link to="Home" spy={true} smooth={true}>
+          <div className="n_name">Samee Uz Zama</div>
+        </Link>
         <span className="n_toggle" onClick={handleClick}>
           <Moon />
           <Sun />
@@ -30,12 +33,22 @@ export default function Navbar() {
       <div className="n_right">
         <div className="n_list">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
+            <Link spy={true} to="Home" smooth={true} activeClass="activeClass">
+              <li>Home</li>
+            </Link>
+            <Link spy={true} to="About" smooth={true}>
+              <li>About</li>
+            </Link>
+            <Link spy={true} to="Projects" smooth={true}>
+              <li>Projects</li>
+            </Link>
           </ul>
         </div>
-        <button className="button n_button">Contact</button>
+        <Link spy={true} to="Footer" smooth={true}>
+          <button className={darkMode ? "button_dark" : "button"}>
+            Contact
+          </button>
+        </Link>
       </div>
     </div>
   );

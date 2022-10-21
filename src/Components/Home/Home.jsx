@@ -7,12 +7,14 @@ import Glasses1 from "../../Asset/glassesimoji.png";
 import Crown from "../../Asset/crown.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { Link } from "react-scroll";
 
 export default function Home() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
   return (
-    <div className="home">
+    <div className="home" id="Home">
       <div className="h_left">
         <div className="h_name">
           <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
@@ -25,7 +27,11 @@ export default function Home() {
             professionally.
           </span>
         </div>
-        <button className="button h_button">Hire Me</button>
+        <span>
+          <Link to="Contact" spy={true} smooth={true}>
+            <button className="button h_button">Hire Me</button>
+          </Link>
+        </span>
         <div className="h_icons">
           <a
             href="https://github.com/SameeUzZama"
