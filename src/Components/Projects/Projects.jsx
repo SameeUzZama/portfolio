@@ -6,6 +6,8 @@ import img from "../../Asset/musicapp.png";
 import "swiper/css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Projects() {
   const theme = useContext(themeContext);
@@ -20,9 +22,13 @@ export default function Projects() {
         className="projects-slider"
       >
         <SwiperSlide>
-          {/* <a href=""> */}
-          <img src={image} alt="" />
-          {/* </a> */}
+          <Link
+            to="/portfolio/ecommerce"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={image} alt="" />
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src={img} alt="" />

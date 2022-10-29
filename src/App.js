@@ -1,11 +1,9 @@
 import { useContext } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import About from "./Components/About/About";
-import Contact from "./Components/Contacts/Contact";
-import Footer from "./Components/Footer/Footer";
-import Home from "./Components/Home/Home";
-import Navbar from "./Components/Navbar/Navbar";
-import Projects from "./Components/Projects/Projects";
+import Landing from "./Components/Landing";
+import EHome from "./Components/Projects/Ecommerce/EHome";
+import ELanding from "./Components/Projects/Ecommerce/ELanding";
 import { themeContext } from "./Context";
 
 function App() {
@@ -19,12 +17,13 @@ function App() {
         color: darkMode ? "white" : "",
       }}
     >
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/portfolio" element={<Landing />} />
+          <Route path="/portfolio/ecommerce" element={<ELanding />} />
+          <Route path="/portfolio/ecommerce/home" element={<EHome />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

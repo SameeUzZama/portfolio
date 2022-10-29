@@ -2,6 +2,8 @@ import React from "react";
 import "./Navbar.css";
 import Sun from "@iconscout/react-unicons/icons/uil-sun";
 import Moon from "@iconscout/react-unicons/icons/uil-moon";
+import Bars from "@iconscout/react-unicons/icons/uil-bars";
+import Times from "@iconscout/react-unicons/icons/uil-times";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { Link } from "react-scroll";
@@ -16,7 +18,7 @@ export default function Navbar() {
 
   return (
     <div className={darkMode ? "n_wrapper_dark" : "n_wrapper"}>
-      <div className="n_left">
+      <nav className="n_left">
         <Link to="Home" spy={true} smooth={true}>
           <div className="n_name">Samee Uz Zama</div>
         </Link>
@@ -29,8 +31,10 @@ export default function Navbar() {
             onClick={handleClick}
           ></span>
         </span>
-      </div>
+      </nav>
       <div className="n_right">
+        <input type="checkbox" id="check" />
+
         <div className="n_list">
           <ul>
             <Link spy={true} to="Home" smooth={true} activeClass="activeClass">
@@ -42,14 +46,18 @@ export default function Navbar() {
             <Link spy={true} to="Projects" smooth={true}>
               <li>Projects</li>
             </Link>
+            <Link spy={true} to="Contact" smooth={true}>
+              <button id="btn" className={darkMode ? "button_dark" : "button"}>
+                Contact
+              </button>
+            </Link>
           </ul>
         </div>
-        <Link spy={true} to="Footer" smooth={true}>
-          <button className={darkMode ? "button_dark" : "button"}>
-            Contact
-          </button>
-        </Link>
       </div>
+      <label for="check">
+        <Bars id="open" />
+        <Times id="close" />
+      </label>
     </div>
   );
 }
