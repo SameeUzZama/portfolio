@@ -38,10 +38,7 @@ export default function About() {
           <a href="../../Asset/SAMEE+UZ+ZAMA.pdf" download>
             <button className="button a_button">Download CV</button>
           </a>
-          <div
-            className="blur a_blu r"
-            style={{ background: "ABF1FF94" }}
-          ></div>
+          <div className={darkMode ? "ablur" : "ablur1"}></div>
         </span>
       </div>
       <div className="a_right">

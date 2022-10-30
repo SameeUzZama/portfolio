@@ -12,9 +12,9 @@ export const Landing = () => {
       <Navbar />
       <Home />
       <About />
-      <Projects />
-      <Contact />
-      <Footer />
+      {/* <Projects /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

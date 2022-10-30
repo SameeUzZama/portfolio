@@ -1,9 +1,874 @@
-.home {
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .home {
+    display: flex;
+    height: 80vh;
+    padding-top: 8rem;
+    width: 100%;
+  }
+  .h_left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .h_name {
+    display: flex;
+    flex-direction: column;
+  }
+  .h_name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .h_name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .h_name > :nth-child(3) {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+    text-align: justify;
+  }
+  .h_button {
+    width: 6rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .h_icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: -3.5%;
+  }
+  .h_icons > * {
+    transform: scale(0.5);
+  }
+  .h_icons > * :hover {
+    cursor: pointer;
+  }
+  .h_right {
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+  }
+  .h_right > :nth-child(1) {
+    position: absolute;
+    width: 40vw;
+    left: 5%;
+    top: 10%;
+  }
+  .h_icon {
+    position: absolute;
+    animation-name: img1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .h_icon > :nth-child(1) {
+    height: 4rem;
+  }
+  @keyframes img1 {
+    0% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+    50% {
+      top: 1.875rem;
+      bottom: 0rem;
+    }
+    100% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+  }
+  .h_fDiv {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(145, 142, 142);
+    height: 10vh;
+    width: 15vw;
+    border-radius: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0 1.25rem;
+    top: 70%;
+    left: 40%;
+    animation-name: img2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes img2 {
+    0% {
+      left: 18.75rem;
+      right: 18.75rem;
+    }
+    50% {
+      left: 0rem;
+      right: 0rem;
+    }
+    100% {
+      left: 18.75rem;
+      right: 18.75rem;
+    }
+  }
+  .h_fDiv > :nth-child(1) {
+    height: 80%;
+  }
+  .blur {
+    position: absolute;
+    width: 35rem;
+    height: 31rem;
+    border-radius: 50%;
+    filter: blur(8rem);
+    z-index: -5rem;
+    background: rgb(10, 255, 255);
+    top: 25rem;
+    left: 14rem;
+  }
+  .blur1 {
+    position: absolute;
+    width: 35rem;
+    height: 31rem;
+    border-radius: 50%;
+    filter: blur(15rem);
+    z-index: -5rem;
+    background: rgb(10, 255, 255);
+    top: 25rem;
+    left: 14rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .home {
+    display: flex;
+    height: 80vh;
+    padding-top: 8rem;
+    width: 100%;
+  }
+  .h_left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .h_name {
+    display: flex;
+    flex-direction: column;
+  }
+  .h_name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .h_name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .h_name > :nth-child(3) {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+    text-align: justify;
+  }
+  .h_button {
+    width: 6rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .h_icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: -3.5%;
+  }
+  .h_icons > * {
+    transform: scale(0.5);
+  }
+  .h_icons > * :hover {
+    cursor: pointer;
+  }
+  .h_right {
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+  }
+  .h_right > :nth-child(1) {
+    position: absolute;
+    width: 40vw;
+    left: 5%;
+    top: 10%;
+  }
+  .h_icon {
+    position: absolute;
+    animation-name: img1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .h_icon > :nth-child(1) {
+    height: 4rem;
+  }
+  @keyframes img1 {
+    0% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+    50% {
+      top: 1.875rem;
+      bottom: 0rem;
+    }
+    100% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+  }
+  .h_fDiv {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(145, 142, 142);
+    height: 10vh;
+    width: 15vw;
+    border-radius: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0 1.25rem;
+    top: 70%;
+    left: 40%;
+    animation-name: img2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes img2 {
+    0% {
+      left: 15rem;
+      right: 15rem;
+    }
+    50% {
+      left: 0rem;
+      right: 0rem;
+    }
+    100% {
+      left: 15rem;
+      right: 15rem;
+    }
+  }
+  .h_fDiv > :nth-child(1) {
+    height: 70%;
+  }
+  .blur {
+    position: absolute;
+    width: 35rem;
+    height: 31rem;
+    border-radius: 50%;
+    filter: blur(8rem);
+    z-index: -5rem;
+    background: rgb(10, 255, 255);
+    top: 25rem;
+    left: 14rem;
+  }
+  .blur1 {
+    position: absolute;
+    width: 35rem;
+    height: 31rem;
+    border-radius: 50%;
+    filter: blur(15rem);
+    z-index: -5rem;
+    background: rgb(10, 255, 255);
+    top: 25rem;
+    left: 14rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .h_left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 3rem;
+    height: 80vh;
+    padding-top: 6rem;
+    width: 100%;
+  }
+  .h_name {
+    display: flex;
+    flex-direction: column;
+  }
+  .h_name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .h_name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .h_name > :nth-child(3) {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+    text-align: justify;
+  }
+  .h_button {
+    width: 6rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .h_icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: -3.5%;
+  }
+  .h_icons > * {
+    transform: scale(0.5);
+  }
+  .h_icons > * :hover {
+    cursor: pointer;
+  }
+  .h_right {
+    position: relative;
+    height: 80vh;
+    padding-top: 4rem;
+    width: 100%;
+  }
+  .h_right > :nth-child(1) {
+    position: absolute;
+    width: 80vw;
+    top: 10%;
+  }
+  .h_icon {
+    position: absolute;
+    animation-name: img1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .h_icon > :nth-child(1) {
+    height: 4rem;
+  }
+  @keyframes img1 {
+    0% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+    50% {
+      top: 1.875rem;
+      bottom: 0rem;
+    }
+    100% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+  }
+  .h_fDiv {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(145, 142, 142);
+    height: 10vh;
+    width: 25vw;
+    border-radius: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0rem 1.5rem;
+    top: 70%;
+    left: 40%;
+    animation-name: img2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes img2 {
+    0% {
+      left: 18rem;
+      right: 18rem;
+    }
+    50% {
+      left: 0rem;
+      right: 0rem;
+    }
+    100% {
+      left: 18rem;
+      right: 18rem;
+    }
+  }
+  .h_fDiv > :nth-child(1) {
+    height: 80%;
+  }
+  .blur {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    filter: blur(8rem);
+    z-index: -5rem;
+    background: rgb(10, 255, 255);
+    top: 25rem;
+    left: 14rem;
+  }
+  .blur1 {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    filter: blur(15rem);
+    z-index: -5rem;
+    background: rgb(10, 255, 255);
+    top: 25rem;
+    left: 14rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .h_left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 3rem;
+    height: 80vh;
+    padding-top: 6rem;
+    width: 100%;
+  }
+  .h_name {
+    display: flex;
+    flex-direction: column;
+  }
+  .h_name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .h_name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .h_name > :nth-child(3) {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+    text-align: justify;
+  }
+  .h_button {
+    width: 6rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .h_icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: -3.5%;
+  }
+  .h_icons > * {
+    transform: scale(0.5);
+  }
+  .h_icons > * :hover {
+    cursor: pointer;
+  }
+  .h_right {
+    position: relative;
+    height: 50vh;
+    padding-top: 4rem;
+    width: 100%;
+  }
+  .h_right > :nth-child(1) {
+    position: absolute;
+    width: 70vw;
+    top: 18%;
+  }
+  .h_icon {
+    position: absolute;
+    animation-name: img1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .h_icon > :nth-child(1) {
+    height: 3rem;
+  }
+  @keyframes img1 {
+    0% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+    50% {
+      top: 1.875rem;
+      bottom: 0rem;
+    }
+    100% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+  }
+  .h_fDiv {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(145, 142, 142);
+    height: 8vh;
+    width: 25vw;
+    border-radius: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0rem 1.5rem;
+    top: 50%;
+    left: 40%;
+    animation-name: img2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes img2 {
+    0% {
+      left: 8rem;
+      right: 8rem;
+    }
+    50% {
+      left: 0rem;
+      right: 0rem;
+    }
+    100% {
+      left: 8rem;
+      right: 8rem;
+    }
+  }
+  .h_fDiv > :nth-child(1) {
+    height: 50%;
+  }
+  .h_fDiv > :nth-child(2) {
+    font-size: 2vh;
+    margin-left: 20%;
+  }
+  .blur {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    filter: blur(6rem);
+    z-index: -5rem;
+    background: rgb(11, 225, 225);
+    top: 45rem;
+  }
+  .blur1 {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    filter: blur(8rem);
+    z-index: -5rem;
+    background: rgb(11, 255, 255);
+    top: 45rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  .h_left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 3rem;
+    height: 80vh;
+    padding-top: 6rem;
+    width: 100%;
+  }
+  .h_name {
+    display: flex;
+    flex-direction: column;
+  }
+  .h_name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .h_name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .h_name > :nth-child(3) {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+    text-align: justify;
+  }
+  .h_button {
+    width: 6rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .h_icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: -3.5%;
+  }
+  .h_icons > * {
+    transform: scale(0.5);
+  }
+  .h_icons > * :hover {
+    cursor: pointer;
+  }
+  .h_right {
+    position: relative;
+    height: 50vh;
+    padding-top: 4rem;
+    width: 100%;
+  }
+  .h_right > :nth-child(1) {
+    position: absolute;
+    width: 70vw;
+    top: 18%;
+  }
+  .h_icon {
+    position: absolute;
+    animation-name: img1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .h_icon > :nth-child(1) {
+    height: 3rem;
+  }
+  @keyframes img1 {
+    0% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+    50% {
+      top: 1.875rem;
+      bottom: 0rem;
+    }
+    100% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+  }
+  .h_fDiv {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(145, 142, 142);
+    height: 7vh;
+    width: 25vw;
+    border-radius: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0rem 1.5rem;
+    top: 50%;
+    left: 40%;
+    animation-name: img2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes img2 {
+    0% {
+      left: 6rem;
+      right: 6rem;
+    }
+    50% {
+      left: 0rem;
+      right: 0rem;
+    }
+    100% {
+      left: 6rem;
+      right: 6rem;
+    }
+  }
+  .h_fDiv > :nth-child(1) {
+    height: 50%;
+  }
+  .h_fDiv > :nth-child(2) {
+    font-size: 1.8vh;
+    margin-left: 20%;
+  }
+  .blur {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    filter: blur(6rem);
+    z-index: -5rem;
+    background: rgb(11, 225, 225);
+    top: 45rem;
+  }
+  .blur1 {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    filter: blur(8rem);
+    z-index: -5rem;
+    background: rgb(11, 255, 255);
+    top: 45rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .h_left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 3rem;
+    height: 80vh;
+    padding-top: 6rem;
+    width: 100%;
+  }
+  .h_name {
+    display: flex;
+    flex-direction: column;
+  }
+  .h_name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .h_name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .h_name > :nth-child(3) {
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+    text-align: justify;
+  }
+  .h_button {
+    width: 6rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .h_icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: -3.5%;
+  }
+  .h_icons > * {
+    transform: scale(0.5);
+  }
+  .h_icons > * :hover {
+    cursor: pointer;
+  }
+  .h_right {
+    position: relative;
+    height: 50vh;
+    padding-top: 4rem;
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .h_right > :nth-child(1) {
+    position: absolute;
+    width: 70vw;
+    top: 18%;
+  }
+  .h_icon {
+    position: absolute;
+    animation-name: img1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .h_icon > :nth-child(1) {
+    height: 3rem;
+  }
+  @keyframes img1 {
+    0% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+    50% {
+      top: 1.875rem;
+      bottom: 0rem;
+    }
+    100% {
+      top: 0rem;
+      bottom: 0rem;
+    }
+  }
+  .h_fDiv {
+    position: relative;
+    z-index: 2;
+    background-color: rgb(145, 142, 142);
+    height: 6vh;
+    width: 25vw;
+    border-radius: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0rem 1.5rem;
+    top: 50%;
+    left: 40%;
+    animation-name: img2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes img2 {
+    0% {
+      left: 4rem;
+      right: 4rem;
+    }
+    50% {
+      left: 0rem;
+      right: 0rem;
+    }
+    100% {
+      left: 4rem;
+      right: 4rem;
+    }
+  }
+  .h_fDiv > :nth-child(1) {
+    height: 50%;
+  }
+  .h_fDiv > :nth-child(2) {
+    font-size: 1.8vh;
+    margin-left: 20%;
+  }
+  .blur {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    filter: blur(6rem);
+    z-index: -5rem;
+    background: rgb(11, 225, 225);
+    top: 45rem;
+  }
+  .blur1 {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    filter: blur(8rem);
+    z-index: -5rem;
+    background: rgb(11, 255, 255);
+    top: 45rem;
+  }
+}
+/* .home {
   display: flex;
   height: 80vh;
-  /* margin-top: 4rem; */
-  padding-top: 4rem;
+  padding-top: 8rem;
   width: 100%;
+  background-color: red;
 }
 .h_left {
   display: flex;
@@ -139,4 +1004,4 @@
   z-index: -5rem;
   top: 12%;
   left: 56%;
-}
+} */

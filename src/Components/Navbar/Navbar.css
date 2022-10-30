@@ -89,16 +89,6 @@
     cursor: pointer;
     color: var(--orange);
   }
-  #btn {
-    padding: 10% 30%;
-    border-radius: 1rem;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    justify-content: center;
-    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-  }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .n_wrapper {
@@ -188,11 +178,6 @@
   .n_list ul li:hover {
     cursor: pointer;
     color: var(--orange);
-  }
-  #btn {
-    width: 5rem;
-    height: 1.8rem;
-    font-size: 0.8rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -299,18 +284,13 @@
     cursor: pointer;
     color: var(--orange);
   }
-  #btn {
-    width: 5rem;
-    height: 1.8rem;
-    font-size: 0.8rem;
-  }
   #check:checked ~ .n_list {
     right: 0px !important;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .n_wrapper {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -323,7 +303,7 @@
     background-color: white;
   }
   .n_wrapper_dark {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -339,10 +319,10 @@
     flex: 2;
     align-items: center;
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
   }
   .n_name {
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
   }
@@ -352,13 +332,13 @@
     border: 3px solid var(--orange);
     border-radius: 1.5rem;
     position: relative;
-    padding: 5px;
+    padding: 3px;
     cursor: pointer;
-    width: 4rem;
+    width: 2rem;
   }
   .n_toggle > * {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
     color: var(--orange);
   }
   .n-toggle-button {
@@ -389,12 +369,12 @@
   .n_list {
     position: fixed;
     width: 40%;
-    height: 20%;
-    line-height: 7vh;
+    height: 32%;
+    line-height: 3vh;
     background-color: black;
     border-radius: 20px;
     right: -100%;
-    top: 10vh;
+    top: 11vh;
     color: white;
     text-align: center !important;
     transition: all 0.5s;
@@ -412,11 +392,6 @@
   .n_list ul li:hover {
     cursor: pointer;
     color: var(--orange);
-  }
-  #btn {
-    width: 10rem;
-    height: 3rem;
-    font-size: 1.8rem;
   }
   #check:checked ~ .n_list {
     right: 0px !important;
@@ -424,7 +399,7 @@
 }
 @media (min-width: 375px) and (max-width: 424px) {
   .n_wrapper {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -437,7 +412,7 @@
     background-color: white;
   }
   .n_wrapper_dark {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -453,10 +428,10 @@
     flex: 2;
     align-items: center;
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
   }
   .n_name {
-    font-size: 2.5rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
   }
@@ -466,13 +441,13 @@
     border: 3px solid var(--orange);
     border-radius: 1.5rem;
     position: relative;
-    padding: 5px;
+    padding: 3px;
     cursor: pointer;
-    width: 5rem;
+    width: 2rem;
   }
   .n_toggle > * {
-    width: 2rem;
-    height: 2rem;
+    width: 0.8rem;
+    height: 0.8rem;
     color: var(--orange);
   }
   .n-toggle-button {
@@ -503,12 +478,12 @@
   .n_list {
     position: fixed;
     width: 40%;
-    height: 20%;
-    line-height: 10vh;
+    height: 30%;
+    line-height: 3vh;
     background-color: black;
     border-radius: 20px;
     right: -100%;
-    top: 10vh;
+    top: 11vh;
     color: white;
     text-align: center !important;
     transition: all 0.5s;
@@ -521,16 +496,11 @@
   }
   .n_list ul li {
     margin: 20px 0px;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .n_list ul li:hover {
     cursor: pointer;
     color: var(--orange);
-  }
-  #btn {
-    width: 10rem;
-    height: 3rem;
-    font-size: 2rem;
   }
   #check:checked ~ .n_list {
     right: 0px !important;
@@ -538,7 +508,7 @@
 }
 @media (min-width: 320px) and (max-width: 374px) {
   .n_wrapper {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -551,7 +521,7 @@
     background-color: white;
   }
   .n_wrapper_dark {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -567,10 +537,10 @@
     flex: 2;
     align-items: center;
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
   }
   .n_name {
-    font-size: 2.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
     cursor: pointer;
   }
@@ -580,13 +550,13 @@
     border: 3px solid var(--orange);
     border-radius: 1.5rem;
     position: relative;
-    padding: 5px;
+    padding: 2px;
     cursor: pointer;
-    width: 5rem;
+    width: 1.5rem;
   }
   .n_toggle > * {
-    width: 2rem;
-    height: 2rem;
+    width: 0.6rem;
+    height: 0.6rem;
     color: var(--orange);
   }
   .n-toggle-button {
@@ -617,12 +587,12 @@
   .n_list {
     position: fixed;
     width: 40%;
-    height: 20%;
-    line-height: 10vh;
+    height: 30%;
+    line-height: 3vh;
     background-color: black;
     border-radius: 20px;
     right: -100%;
-    top: 10vh;
+    top: 11vh;
     color: white;
     text-align: center !important;
     transition: all 0.5s;
@@ -635,16 +605,11 @@
   }
   .n_list ul li {
     margin: 20px 0px;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .n_list ul li:hover {
     cursor: pointer;
     color: var(--orange);
-  }
-  #btn {
-    width: 10rem;
-    height: 4rem;
-    font-size: 2rem;
   }
   #check:checked ~ .n_list {
     right: 0px !important;

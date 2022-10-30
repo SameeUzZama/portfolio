@@ -59,16 +59,7 @@ export default function Home() {
           <span>Web Developer</span>
         </div>
       </div>
-      <div
-        className={darkMode ? "blur1" : "blur"}
-        style={{
-          background: "rgb(10,255,255)",
-          top: "25rem",
-          width: "35rem",
-          height: "31rem",
-          left: "14rem",
-        }}
-      ></div>
+      <div className={darkMode ? "blur1" : "blur"}></div>
     </div>
   );
 }

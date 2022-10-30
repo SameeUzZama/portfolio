@@ -37,20 +37,31 @@ export default function Navbar() {
 
         <div className="n_list">
           <ul>
-            <Link spy={true} to="Home" smooth={true} activeClass="activeClass">
-              <li>Home</li>
-            </Link>
-            <Link spy={true} to="About" smooth={true}>
-              <li>About</li>
-            </Link>
-            <Link spy={true} to="Projects" smooth={true}>
-              <li>Projects</li>
-            </Link>
-            <Link spy={true} to="Contact" smooth={true}>
-              <button id="btn" className={darkMode ? "button_dark" : "button"}>
+            <li>
+              <Link
+                spy={true}
+                to="Home"
+                smooth={true}
+                activeClass="activeClass"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link spy={true} to="About" smooth={true}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link spy={true} to="Projects" smooth={true}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link spy={true} to="Contact" smooth={true}>
                 Contact
-              </button>
-            </Link>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
