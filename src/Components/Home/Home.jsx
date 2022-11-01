@@ -50,14 +50,10 @@ export default function Home() {
         </div>
       </div>
       <div className="h_right">
-        <img src={Code} alt="" />
         <div className="h_icon">
           <img src={Glasses1} alt="" />
         </div>
-        <div className="h_fDiv">
-          <img src={Crown} alt="" />
-          <span>Web Developer</span>
-        </div>
+        <img src={Code} alt="" />
       </div>
       <div className={darkMode ? "blur1" : "blur"}></div>
     </div>

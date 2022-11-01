@@ -48,8 +48,8 @@ export default function About() {
           transition={transition}
           className="a_right_card"
         >
-          {skills.map((skill) => (
-            <div className="card">
+          {skills.map((skill, key) => (
+            <div className="card" key={key}>
               <img src={skill.img} alt="#" />
               <span>{skill.skill}</span>
             </div>

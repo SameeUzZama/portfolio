@@ -11,7 +11,7 @@ export const Landing = () => {
     <div>
       <Navbar />
       <Home />
-      <About />
+      {/* <About /> */}
       {/* <Projects /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}

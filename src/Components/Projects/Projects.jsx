@@ -7,7 +7,6 @@ import "swiper/css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
 
 export default function Projects() {
   const theme = useContext(themeContext);
