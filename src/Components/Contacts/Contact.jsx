@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-import { motion } from "framer-motion";
 
 const Contact = () => {
   const theme = useContext(themeContext);
@@ -49,26 +48,15 @@ const Contact = () => {
     setMsg("");
   };
 
-  const transition = {
-    duration: 2,
-    type: "spring",
-  };
-
   return (
     <div className="contact-form" id="Contact">
       <div className="c-left">
         <div className="awesome">
           <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
           <span>Contact me</span>
-          <div className="blur c-blur1"></div>
         </div>
       </div>
-      <motion.div
-        initial={{ left: "25rem" }}
-        whileInView={{ left: "1rem" }}
-        transition={transition}
-        className="c-right"
-      >
+      <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
@@ -95,10 +83,10 @@ const Contact = () => {
             value={msg}
             onChange={handleMsg}
           />
-          <input type="submit" value="Send" className="button" />
+          <input type="submit" value="Send" className="c-button" />
           <span>{done && "Thanks for Contacting me"}</span>
         </form>
-      </motion.div>
+      </div>
     </div>
   );
 };

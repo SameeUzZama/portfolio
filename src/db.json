@@ -45,5 +45,12 @@
       "img": "https://www.datocms-assets.com/45470/1631026680-logo-react-native.png",
       "skill": "React Native"
     }
+  ],
+  "projects": [
+    {
+      "title": "Music App",
+      "link": "http://SameeUzZama.github.io/redux-e-commerce",
+      "description": "An e-commerce website is one that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location"
+    }
   ]
 }

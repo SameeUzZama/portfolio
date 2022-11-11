@@ -8,14 +8,16 @@ import Projects from "./Projects/Projects";
 
 export const Landing = () => {
   return (
-    <div>
-      <Navbar />
-      <Home />
-      {/* <About /> */}
-      {/* <Projects /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
+      <Footer />
+    </>
   );
 };
 

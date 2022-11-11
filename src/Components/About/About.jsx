@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./About.css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-import dbjson from "../../db.json";
-import { motion } from "framer-motion";
+import dbjson from "../../db";
 
 export default function About() {
   const theme = useContext(themeContext);
@@ -14,11 +13,6 @@ export default function About() {
   useEffect(() => {
     setSkills(dbjson.cards);
   }, []);
-
-  const transition = {
-    duration: 2,
-    type: "spring",
-  };
 
   return (
     <div className="About" id="About">
@@ -34,27 +28,16 @@ export default function About() {
           my knowledge base, I actively seek out new technologies and stay up-to
           date on industry trends and advancements.
         </span>
-        <span>
-          <a href="../../Asset/SAMEE+UZ+ZAMA.pdf" download>
-            <button className="button a_button">Download CV</button>
-          </a>
-          <div className={darkMode ? "ablur" : "ablur1"}></div>
-        </span>
       </div>
       <div className="a_right">
-        <motion.div
-          initial={{ left: "25rem" }}
-          whileInView={{ left: "1rem" }}
-          transition={transition}
-          className="a_right_card"
-        >
+        <div className="a_right_card">
           {skills.map((skill, key) => (
             <div className="card" key={key}>
               <img src={skill.img} alt="#" />
               <span>{skill.skill}</span>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

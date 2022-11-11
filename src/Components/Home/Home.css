@@ -1,8 +1,8 @@
 @media screen and (min-width: 993px) {
   .home {
     display: flex;
-    height: 100vh;
     padding-top: 8rem;
+    height: 80vh;
   }
   .h_left {
     display: flex;
@@ -30,10 +30,11 @@
     margin-top: 0.625rem;
     text-align: justify;
   }
-  .h_button {
-    width: 20%;
-    height: 2rem;
-    margin-bottom: 1rem;
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 6;
   }
   .h_icons {
     display: flex;
@@ -111,7 +112,7 @@
     flex: 1;
     flex-direction: column;
     gap: 3rem;
-    height: 100vh;
+    height: 100%;
     padding-top: 6rem;
   }
   .h_name {
@@ -135,10 +136,10 @@
     margin-top: 0.625rem;
     text-align: justify;
   }
-  .h_button {
-    width: 20%;
-    height: 2rem;
-    margin-bottom: 1rem;
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    z-index: 6;
   }
   .h_icons {
     display: flex;
@@ -153,11 +154,11 @@
   }
   .h_right {
     position: relative;
-    height: 100vh;
+    height: 100%;
     padding-top: 3rem;
   }
   .h_right > :nth-child(2) {
-    position: absolute;
+    position: relative;
     max-width: 100%;
     z-index: 2;
   }
@@ -216,8 +217,9 @@
     flex: 1;
     flex-direction: column;
     gap: 3rem;
-    height: 100vh;
+    height: 100%;
     padding-top: 6rem;
+    margin-bottom: 5rem;
   }
   .h_name {
     display: flex;
@@ -240,11 +242,11 @@
     margin-top: 0.625rem;
     text-align: justify;
   }
-  .h_button {
-    width: 30vw;
-    height: 2rem;
-    margin-bottom: 1rem;
-    font-size: 4vw;
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 6;
   }
   .h_icons {
     display: flex;
@@ -258,39 +260,7 @@
     cursor: pointer;
   }
   .h_right {
-    position: relative;
-    height: 100vh;
-    margin-top: 15%;
-    padding-top: 3rem;
-  }
-  .h_right > :nth-child(2) {
-    max-width: 100%;
-    position: absolute;
-  }
-  .h_icon {
-    z-index: 5;
-    position: absolute;
-    animation-name: img1;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  .h_icon > :nth-child(1) {
-    width: 12vw;
-  }
-  @keyframes img1 {
-    0% {
-      top: 0rem;
-      bottom: 0rem;
-    }
-    50% {
-      top: 1.8rem;
-      bottom: 0rem;
-    }
-    100% {
-      top: 0rem;
-      bottom: 0rem;
-    }
+    display: none;
   }
   .blur {
     position: absolute;
