@@ -22,14 +22,16 @@ export default function Navbar() {
         <Link to="Home" spy={true} smooth={true}>
           <div className="n_name">Samee Uz Zama</div>
         </Link>
-        <span className="n_toggle" onClick={handleClick}>
-          <Moon />
-          <Sun />
-          <span
-            className="n-toggle-button"
-            style={darkMode ? { left: "2px" } : { right: "2px" }}
-            onClick={handleClick}
-          ></span>
+        <span onClick={handleClick}>
+          <span className="n_toggle" onClick={handleClick}>
+            <Moon onClick={handleClick} />
+            <Sun onClick={handleClick} />
+            <span
+              className="n-toggle-button"
+              style={darkMode ? { left: "2px" } : { right: "2px" }}
+              onClick={handleClick}
+            ></span>
+          </span>
         </span>
       </nav>
       <div className="n_right">

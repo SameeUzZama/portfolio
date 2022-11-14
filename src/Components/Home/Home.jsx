@@ -22,7 +22,8 @@ export const Home = () => {
           <span style={{ color: darkMode ? "white" : "" }}>
             React JS developer who is for designing and implementing UI
             components for JavaScript-based web applications with the use of
-            open- source library infrastructure.
+            open- source library infrastructure. Strong knowledge of basic web
+            technologies such as HTML, CSS, Bootstrap, and others...
           </span>
         </div>
         <div className="buttons">

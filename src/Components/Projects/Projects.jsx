@@ -2,7 +2,6 @@ import React from "react";
 import "./Projects.css";
 import { projects } from "../../db";
 import image1 from "../../Asset/E-Commerce.JPG";
-import { UilExternalLinkAlt } from "@iconscout/react-unicons";
 import "swiper/css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
@@ -17,7 +16,6 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 export default function Projects() {
   const theme = useContext(themeContext);
@@ -56,7 +54,7 @@ export default function Projects() {
                     <Typography
                       sx={{ color: darkMode ? "white" : "" }}
                       gutterBottom
-                      variant="h5"
+                      variant="h6"
                       component="div"
                     >
                       {item.title}
