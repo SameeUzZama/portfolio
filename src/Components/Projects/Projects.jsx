@@ -1,12 +1,14 @@
 import React from "react";
 import "./Projects.css";
-import dbjson from "../../db";
+import { projects } from "../../db";
 import image1 from "../../Asset/E-Commerce.JPG";
+import { UilExternalLinkAlt } from "@iconscout/react-unicons";
 import "swiper/css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import {
   Box,
+  Button,
   Card,
   CardActionArea,
   CardContent,
@@ -15,6 +17,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   const theme = useContext(themeContext);
@@ -23,9 +26,8 @@ export default function Projects() {
   const [project, setProject] = useState([]);
 
   useEffect(() => {
-    setProject(dbjson.projects);
+    setProject(projects);
   }, []);
-  console.log(project);
 
   return (
     <Box className="projects" id="Projects">
@@ -60,12 +62,31 @@ export default function Projects() {
                       {item.title}
                     </Typography>
                     <Typography
-                      sx={{ color: darkMode ? "white" : "" }}
+                      sx={{
+                        color: darkMode ? "white" : "",
+                        textAlign: "justify",
+                      }}
                       variant="body2"
                       color="text.secondary"
                     >
                       {item.description}
                     </Typography>
+                    <a
+                      className="link"
+                      href={item.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button
+                        sx={{
+                          fontSize: "80%",
+                          backgroundColor: "orange",
+                        }}
+                        variant="contained"
+                      >
+                        Open Project
+                      </Button>
+                    </a>
                   </CardContent>
                 </CardActionArea>
               </Card>

@@ -4,6 +4,7 @@ import Github from "../../Asset/github.png";
 import Linkedin from "../../Asset/linkedin.png";
 import Code from "../../Asset/code.png";
 import Glasses1 from "../../Asset/glassesimoji.png";
+import Resume from "../../Asset/SAMEE UZ ZAMA.pdf";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { Link } from "react-scroll";
@@ -32,7 +33,7 @@ export const Home = () => {
             <div className={darkMode ? "ablur" : "ablur1"}></div>
           </span>
           <span>
-            <a href="../../Asset/SAMEE UZ ZAMA.pdf" download>
+            <a href={Resume} download>
               <button className="button a_button">Download CV</button>
             </a>
             <div className={darkMode ? "ablur" : "ablur1"}></div>

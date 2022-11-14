@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./About.css";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
-import dbjson from "../../db";
+import { cards } from "../../db";
 
 export default function About() {
   const theme = useContext(themeContext);
@@ -11,7 +11,7 @@ export default function About() {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    setSkills(dbjson.cards);
+    setSkills(cards);
   }, []);
 
   return (

@@ -65,7 +65,7 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-      <label for="check">
+      <label htmlFor="check">
         <Bars id="open" />
         <Times id="close" />
       </label>
