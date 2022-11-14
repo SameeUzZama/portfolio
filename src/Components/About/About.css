@@ -176,9 +176,10 @@
     line-height: 1.5rem;
   }
   .a_button {
-    width: 8rem;
+    width: 4rem;
     height: 2rem;
     margin-top: 1rem;
+    font-size: 0.7rem;
   }
   .a_right_card {
     display: flex;

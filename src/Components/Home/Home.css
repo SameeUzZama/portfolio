@@ -245,12 +245,11 @@
   .buttons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     z-index: 6;
   }
   .h_icons {
     display: flex;
-    gap: 1rem;
     margin-left: -3.5%;
   }
   .h_icons > * {
@@ -264,7 +263,7 @@
   }
   .blur {
     position: absolute;
-    width: 15rem;
+    width: 80%;
     height: 15rem;
     border-radius: 50%;
     filter: blur(6rem);
@@ -274,7 +273,7 @@
   }
   .blur1 {
     position: absolute;
-    width: 15rem;
+    width: 80%;
     height: 15rem;
     border-radius: 50%;
     filter: blur(8rem);
