@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf6f7c22.css",
-    "main.js": "/portfolio/static/js/main.d13cebc2.js",
+    "main.js": "/portfolio/static/js/main.d61da60c.js",
     "static/media/code.png": "/portfolio/static/media/code.b51480f9ed199981557b.png",
     "static/media/E-Commerce.JPG": "/portfolio/static/media/E-Commerce.670f8134278f74f05c34.JPG",
+    "static/media/Responsive-VPN-App.JPG": "/portfolio/static/media/Responsive-VPN-App.042adae6dae4e4fb69b3.JPG",
     "static/media/glassesimoji.png": "/portfolio/static/media/glassesimoji.a08bdab12e8eb56a6874.png",
     "static/media/SAMEE UZ ZAMA.pdf": "/portfolio/static/media/SAMEE UZ ZAMA.eb8c015ed642f857ad3a.pdf",
     "static/media/wave.png": "/portfolio/static/media/wave.fdfef4069ad90f610990.png",
     "index.html": "/portfolio/index.html",
     "main.bf6f7c22.css.map": "/portfolio/static/css/main.bf6f7c22.css.map",
-    "main.d13cebc2.js.map": "/portfolio/static/js/main.d13cebc2.js.map"
+    "main.d61da60c.js.map": "/portfolio/static/js/main.d61da60c.js.map"
   },
   "entrypoints": [
     "static/css/main.bf6f7c22.css",
-    "static/js/main.d13cebc2.js"
+    "static/js/main.d61da60c.js"
   ]
 }
