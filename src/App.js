@@ -1,26 +1,50 @@
-import { useContext } from "react";
+import React from "react";
+import { createGlobalStyle } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
-import Landing from "./Components/Landing";
-import { themeContext } from "./Context";
+import { Home } from "./pages/Home/Home";
+import { About } from "./pages/About/About";
+import { Projects } from "./pages/Projects/Projects";
+import { Contact } from "./pages/Contact/Contact";
+
+const GlobalStyles = createGlobalStyle`
+  *, 
+  *:before, 
+  *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+
+  body{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    background-color: #000;
+    background-color: #110421;
+  }
+
+  h1{
+    font-size: 70px;
+    font-weight: 600;
+  }
+`;
 
 function App() {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
   return (
-    <div
-      className="App"
-      style={{
-        background: darkMode ? "black" : "",
-        color: darkMode ? "white" : "",
-      }}
-    >
+    <>
+      <GlobalStyles />
       <BrowserRouter>
         <Routes>
-          <Route path="/portfolio" element={<Landing />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 
