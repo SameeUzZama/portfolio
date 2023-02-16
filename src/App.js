@@ -24,6 +24,11 @@ const GlobalStyles = createGlobalStyle`
     font-family: sans-serif;
     background-color: #000;
     background-color: #110421;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
   }
 
   h1{
@@ -35,15 +40,17 @@ const GlobalStyles = createGlobalStyle`
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="select">
+        <GlobalStyles />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }

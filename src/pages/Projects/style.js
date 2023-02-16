@@ -70,8 +70,7 @@ export const ProjectBodyTwo = styled.div`
 
       &__image {
         background-color: rgba(255, 255, 255, 0.3);
-
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
@@ -82,6 +81,8 @@ export const ProjectBodyTwo = styled.div`
         z-index: 1;
         transition: transform 200ms ease-in-out;
         will-change: transform;
+        border: 1px dashed white;
+        margin: 0px 5px;
       }
 
       &__overlay {
