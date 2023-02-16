@@ -56,8 +56,8 @@ export const About = () => {
           <div className="about__details">
             {displayOne && (
               <TypeMe duration={500}>
-                React JS front end developer with passion for responsive website
-                design and its funtionality
+                React JS front end developer to build dynamic and responsive
+                user interfaces design.
               </TypeMe>
             )}
             <br />

@@ -32,6 +32,8 @@ export const ProjectBodyTwo = styled.div`
       position: relative;
       cursor: pointer;
       overflow: hidden;
+      border: 1px dashed white;
+      margin: 5px;
 
       &__info {
         position: relative;
@@ -81,8 +83,6 @@ export const ProjectBodyTwo = styled.div`
         z-index: 1;
         transition: transform 200ms ease-in-out;
         will-change: transform;
-        border: 1px dashed white;
-        margin: 0px 5px;
       }
 
       &__overlay {
