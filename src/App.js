@@ -1,10 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { createGlobalStyle } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { Home } from "./pages/Home/Home";
-// import { About } from "./pages/About/About";
-// import { Projects } from "./pages/Projects/Projects";
-// import { Contact } from "./pages/Contact/Contact";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
