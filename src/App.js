@@ -1,10 +1,15 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { createGlobalStyle } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home/Home";
-import { About } from "./pages/About/About";
-import { Projects } from "./pages/Projects/Projects";
-import { Contact } from "./pages/Contact/Contact";
+// import { Home } from "./pages/Home/Home";
+// import { About } from "./pages/About/About";
+// import { Projects } from "./pages/Projects/Projects";
+// import { Contact } from "./pages/Contact/Contact";
+
+const Home = lazy(() => import("./pages/Home/Home"));
+const About = lazy(() => import("./pages/About/About"));
+const Projects = lazy(() => import("./pages/Projects/Projects"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
 
 const GlobalStyles = createGlobalStyle`
   *, 
@@ -43,12 +48,14 @@ function App() {
       <div className="select">
         <GlobalStyles />
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </Suspense>
         </BrowserRouter>
       </div>
     </>
